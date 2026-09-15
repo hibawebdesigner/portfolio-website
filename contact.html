@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,
+initial-scale=1.0">
+<title>Contact</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;500;700&display=swap" rel="stylesheeet">
+</head>
+<body>
+<div class="navbar">
+<a href="#" class="logo"><span class="logo-h">H</span>iba</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link " data-i18n="home">Home</a>
+<a href="about.html" class="nav-link" data-i18n="about">About Me</a>
+<a href="projects.html" class="nav-link" data-i18n="portfolio">Portfolio</a>
+<a href="contact.html" class="nav-link active" data-i18n="contact">Contact</a>
+<a href="cv.pdf" class="nav-link cv-mobile" download>Download CV</a>
+</div>
+<div class="nav-actions">
+<div class="language-switcher">
+<button type="button" class="language-btn" onclick="toggleLanguages()">🌐 EN ▾</button>
+<div class="language-menu" id="languageMenu">
+<button onclick="changeLanguage('en')">
+<img src="flags/ENGLISH.svg" alt="">English</button>
+<button onclick="changeLanguage('de')">
+<img src="flags/germany.svg" alt="">Deutsch</button>
+<button onclick="changeLanguage('fr')"> 
+<img src="flags/france.svg" alt="">Français</button>
+<button onclick="changeLanguage('it')">
+<img src="flags/italy.svg" alt="">Italiano</button>
+<button onclick="changeLanguage('ar')">
+<img src="flags/syria.svg" alt="">Arabic</button>
+</div>
+</div>
+<button onclick="toggleTheme()" class="theme-btn" id="themeToggle">☀️</button>
+<button class="menu-btn" onclick="toggleMenu()"></button>
+</div>
+</div>
+<div class="card contact-card">
+<div class="contact-info">
+<span class="contact-label" data-i18n="contact-label">GET IN TOUCH</span>
+<h1 data-i18n="contact-title">Contact Me</h1>
+<P class="contact-text" data-i18n="contact-description">
+Have a project in mind ? I'd love to hear about it .   
+Send me a message and let's create something great together. 
+</P>
+<div class="contact-detail">
+<span class="contact-icon">✉️</span>
+<div>
+<h3 data-i18n="email-title">Email</h3>
+<a href="mailto:hibawebdesigner@gmail.com">hibawebdesigner@gmail.com</a>
+</div>
+</div> 
+<div class="contact-detail">
+<span class="contact-icon">📍</span>
+<div>
+<h3 data-i18n="location">Location</h3>
+<p data-i18n="contact-location-value"> Lattakia, Syria</p>
+</div>
+</div> 
+<div class="contact-detail">
+<span class="contact-icon">🤝</span>
+<div>
+<h3 data-i18n="availability-title">Availability</h3>
+<p data-i18n="availability-text">Available for freelance work</p>
+</div>
+</div>
+</div>
+<form class="contact-form"
+action="https://formsubmit.co/hibawebdesigner@gmail.com"
+method="POST">
+<input
+type="text"
+name="name"
+autoComplete="name"
+placeholder="Your name" 
+data-i18n-placeholder="your-name" 
+required>
+<input
+type="email" 
+name="email"
+autoComplete="email"
+placeholder="Your email"
+data-i18n-placeholder="your-email" 
+required>
+<textarea 
+name="message"
+placeholder="Your message" 
+data-i18n-placeholder="your-message"
+rows="6"
+required
+></textarea>
+<input type="hidden" name="_subject" value="New message from Hiba Portfolio">
+<input type="hidden" name="_next" value="http://127.0.0.1:5500//contact.html?sent=true">
+<input type="hidden" name="_captcha" value="false">
+<button 
+type="submit" 
+class="btn" 
+data-i18n="send-message"
+>
+Send Message
+</button>
+<p id="success-message" data-i18n="success-message" style="display: none;" >
+ ✓ Message sent successfully! I'll get back to you soon.
+</p>
+</form>
+</div>
+<footer>
+<p data-i18n="footer-text">
+© 2026 Hiba • Frontend Developer 
+</p>
+</footer>
+<script src="script.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+if (params.get('sent') === 'true') {
+  const successMessage = document.getElementById('success-message');
+  successMessage.style.display = 'block';
+}
+</script>
+</body>
+</html>

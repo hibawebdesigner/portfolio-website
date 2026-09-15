@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="navbar">
+<a href="#" class="logo"><span class="logo-h">H</span>iba</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link " data-i18n="home">Home</a>
+<a href="about.html" class="nav-link active" data-i18n="about">About Me</a>
+<a href="projects.html" class="nav-link" data-i18n="portfolio">Portfolio</a>
+<a href="contact.html" class="nav-link" data-i18n="contact">Contact</a>
+<a href="cv.pdf" class="nav-link cv-mobile" download>Download CV</a>
+</div>
+<div class="nav-actions">
+<div class="language-switcher">
+<button type="button" class="language-btn" onclick="toggleLanguages()">🌐 EN ▾</button>
+<div class="language-menu" id="languageMenu">
+<button onclick="changeLanguage('en')">
+<img src="flags/ENGLISH.svg" alt="">English</button>
+<button onclick="changeLanguage('de')">
+<img src="flags/Germany.svg" alt="">Deutsch</button>
+<button onclick="changeLanguage('fr')"> 
+<img src="flags/France.svg" alt="">Français</button>
+<button onclick="changeLanguage('it')">
+<img src="flags/Italy.svg" alt="">Italiano</button>
+<button onclick="changeLanguage('ar')">
+<img src="flags/Syria.svg" alt="">Arabic</button>
+</div>
+</div>
+<button onclick="toggleTheme()" class="theme-btn" id="themeToggle">☀️</button>
+<button class="menu-btn" onclick="toggleMenu()"></button>
+</div>
+</div>
+<div class="about-page">
+<section class="about-hero">
+<div class="about-content">
+<span class="about-label" data-i18n="about-label">GET TO KNOW ME</span>
+<h1 data-i18n="about-title">About Me</h1>
+<h2 data-i18n="about-subtitle">Who I Am & What I Do</h2>
+<p class="about-description" data-i18n="about-description">
+I'm a  Frontend Developer passionate about building modern, responsive and user-friendly websites. I enjoy turning ideas into 
+clean and elegant digital experiences using HTML, CSS, and JavaScript.
+</p>
+<div class="info-cards">
+<div class="info-card">
+<span class="info-icon">🎓</span>
+<div>
+<h3 data-i18n="education">Education</h3>
+<p data-i18n="education-value">Computer Engineering</p>
+</div>
+</div>
+<div class="info-card">
+<span class="info-icon">📍</span>
+<div>
+<h3 data-i18n="location">Location</h3>
+<p data-i18n="location-value">Syria</p>
+</div>
+</div>
+<div class="info-card">
+<span class="info-icon">📆</span>
+<div>
+<h3 data-i18n="experience">Experience</h3>
+<p data-i18n="experience-value">Project-Based Experience</p>
+</div>
+</div>
+<div class="info-card">
+<span class="info-icon">🚀</span>
+<div>
+<h3 data-i18n="passion">Passion</h3>
+<p data-i18n="passion-value">Modern Web Experiences</p>
+</div>
+</div>
+</div>
+</div>
+<div class="creative-side">
+<div class="desk-lamp">
+<div class="lamp-head"></div>
+<div class="lamp-arm"></div>
+<div class="lamp-base"></div>
+</div>
+<div class="plant">
+<div class="plant-leaves">🌿</div>
+<div class="plant-pot"></div>
+</div>
+<div class="inspiration-board">
+<span class="code-symbol">&lt;/&gt;</span> 
+<h3>
+Code.<br>
+Create.<br>
+<span>Inspire.</span><br>Repeat.
+</h3>
+<div class="board-line"></div>
+</div>
+<div class="neon-code">
+<span>&lt;</span>
+<span>/</span>
+<span>&gt;</span>
+</div>
+<div class="desk"></div>
+</div>
+</section>
+<section class="services-section">
+<span class="section-small-title" data-i18n="services-title">WHAT I DO</span>
+<div class="service-grid">
+<div class="service-card">
+<div class="service-icon">🖥️</div>
+<div>
+<h3 data-i18n="responsive-title">Responsive Design</h3>
+<p data-i18n="responsive-text">beautiful and work smoothly on desktop, table and mobile.</p>
+</div>
+</div>
+<div class="service-card">
+<div class="service-icon">📄</div>
+<div>
+<h3 data-i18n="landing-title">Landing Pages</h3>
+<p data-i18n="landing-text">Modern services and ideas clearly and professionally.</p>
+</div>
+</div>
+<div class="service-card">
+<div class="service-icon">👩</div>
+<div>
+<h3 data-i18n="portfolio-sites-title">Business Websites</h3>
+<p data-i18n="portfolio-sites-text">Modern websites designed to present brands, services and businesses professionally.</p>
+</div>
+</div>
+<div class="service-card">
+<div class="service-icon">&lt;/ &gt;</div>
+<div>
+<h3 data-i18n="clean-code-title">Clean Code</h3>
+<p data-i18n="clean-code-text">
+Organized HTML, CSS and Javascript with attention to usability.
+</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<footer>
+<p data-i18n="footer-text">© 2026 Hiba • Frontend Developer </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

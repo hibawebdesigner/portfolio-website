@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>projects</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body >
+<div class="navbar">
+<a href="#" class="logo"><span class="logo-h">H</span>iba</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link " data-i18n="home">Home</a>
+<a href="about.html" class="nav-link" data-i18n="about">About Me</a>
+<a href="projects.html" class="nav-link active" data-i18n="portfolio">Portfolio</a>
+<a href="contact.html" class="nav-link" data-i18n="contact">Contact</a>
+<a href="cv.pdf" class="nav-link cv-mobile" download>Download CV</a>
+</div>
+<div class="nav-actions">
+<div class="language-switcher">
+<button type="button" class="language-btn" onclick="toggleLanguages()">🌐 EN ▾</button>
+<div class="language-menu" id="languageMenu">
+<button onclick="changeLanguage('en')">
+<img src="flags/ENGLISH.svg" alt="">English</button>
+<button onclick="changeLanguage('de')">
+<img src="flags/germany.svg" alt="">Deutsch</button>
+<button onclick="changeLanguage('fr')"> 
+<img src="flags/france.svg" alt="">Français</button>
+<button onclick="changeLanguage('it')">
+<img src="flags/italy.svg" alt="">Italiano</button>
+<button onclick="changeLanguage('ar')">
+<img src="flags/syria.svg" alt="">Arabic</button>
+</div>
+</div>
+<button onclick="toggleTheme()" class="theme-btn" id="themeToggle">☀️</button>
+<button class="menu-btn" onclick="toggleMenu()"></button>
+</div>
+</div>
+<div class="card">
+<span class="projects-label" data-i18n="featured-work">FEATURED WORK</span>
+<h1 data-i18n="my-projects">My Projects</h1>
+<p class="projects-subtitle" data-i18n="projects-subtitle">A selection of responsive websites designed for different brands and services.</p>
+<div class="project-container">
+<div class="project-card">
+<img src="elite fitness club.png" alt="Elite Fitness Club">
+<h3>Elite Fitness Club</h3>
+<p data-i18n="elite-description">Luxury fitness club website featuring nutrition, body analysis and trainers.</p>
+<a href="elite-fitness/index.html" class="btn" data-i18n="view-project">View Project ↗</a>
+</div>
+<div class="project-card">
+<img src="luxora.png" alt="Luxora Aesthetic Clinic">
+<h3>Luxora Aesthetic Clinic</h3>
+<p data-i18n="luxora-description">Modern aesthetic clinic website with booking, treatments and responsive layout.</p>
+<a href="aesthetic-clinic/index.html" class="btn" data-i18n="view-project">View Project ↗</a>
+</div>
+<div class="project-card">
+<img src="mavifashion.png" alt="Mavi Fashion">
+<h3>Mavi Fashion</h3>
+<p data-i18n="mavi-description">Luxury fashion website with responsive design, collections and elegant layout.</p>
+<a href="fashion.html" class="btn" data-i18n="view-project">View Project ↗</a>
+</div>
+</div>
+</div>
+<footer>
+<p data-i18n="footer-text">© 2026 Hiba • Frontend Developer </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

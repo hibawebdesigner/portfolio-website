@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width,initial-scale=1.0">
+<title>Mavi Fashion</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="fashion-page">
+<header class="fashion-header">
+<img src="logo.png" alt="Mavi Fashion Store" class="fashion-logo">
+<div class="fashion-brand">Mavi Fashion</div>
+<button class="fashion-menu-btn" onclick="toggleFashionMenu()">
+<span></span>
+<span></span>
+<span></span>
+</button>
+<nav class="fashion-navbar">
+<a href="#home">Home</a>
+<a href="#collections">Collections</a>
+<a href="https://www.instagram.com/mavi_fashion2022?igsh=MTVrajFzbXoyN2Zpdg==" target="_blank" >Instagram</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="fashion-hero" id="home">
+<div class="fashion-hero-text">
+<span>NEW ARRIVALS ✨</span>
+<h1>
+Luxury Fashion<br>
+Collection
+</h1>
+<p>
+Soft feminine luxury style inspired by Instagram fashion brands.
+</p>
+<div class="fashion-buttons">
+<a href="#trending-styles" class="fashion-btn">✨Trending Styles</a>
+<a href="#summer-vibes" class="fashion-btn glass"> ☀️Summer Vibes</a>
+</div>
+</div>
+<div class="fashion-hero-image">
+<img src="hero.jpg" alt="">
+</div>
+</section>
+<section id="trending-styles" class="trending-styles fade-Up">
+<h2>Trending Styles ✨</h2>
+<div class="trending-grid">
+<div class="trend-card">
+<img src="trend1.png" alt="">
+</div>
+<div class="trend-card">
+<img src="trend2.jpg" alt="">
+</div>
+<div class="trend-card">
+<img src="trend3.png" alt="">
+</div> 
+</div>
+<a href="#home" class="back-home-btn" id="backHomeBtn">⬅️ Back to Home</a>
+</section>
+<section id="summer-vibes"
+ class="summer-vibes fade-Up">
+<div class="summer-content">
+<div class="summer-video">
+<video autoplay muted loop playsinline>
+<source src="summer.mp4" type="video/mp4">
+</video>
+</div>
+<div class="summer-text">
+<span>SUMMER EDIT</span>
+<h2> Golden Days,<br>Effortless Style</h2>
+<p> Discover soft summer looks made for sunny days,
+elegant evenings, and unforgettable
+ moments.</p>
+<p class="summer-note">Limited Summer  Collection 2026 ✨</p>
+<a href="#collections" class="summer-btn">Explore Summer Looks</a>
+</div>
+</div>
+</section>
+<section class="fashion-quote fade-Up">
+<p>
+"Elegance is the only beauty that never fades."
+</p>
+</section>
+<section class="fashion-collections" id="collections">
+<h2>Collections</h2>
+<div class="fashion-cards">
+<div class="fashion-card">
+<img src="shoes.png" alt="">
+<div class="fashion-card-content">
+<h3>Shoes Collection</h3>
+<p>Elegant shoes for every occasion</p>
+<a href="#shoes-gallery" class="fashion-card-btn">View Collection</a>
+</div>
+</div>
+<div class="fashion-card">
+<img src="yellow-dress.jpg" alt="">
+<div class="fashion-card-content">
+<h3>Dresses Collection</h3>
+<p>Luxury dresses  with soft feminine style</p>
+<a href="#dresses-gallery" class="fashion-card-btn">View Collection</a>
+</div>
+</div>
+<div class="fashion-card">
+<img src="bag.jpg" alt="">
+<div class="fashion-card-content">
+<h3>Bags Collection</h3>
+<p>Chic bags for modern fashion lovers</p>
+<a href="#bags-gallery" class="fashion-card-btn">View Collection</a>
+</div>
+</div>
+</section>
+<section id="shoes-gallery" class="gallery-section">
+<h2>Shoes Gallery</h2>
+<div class="gallery-grid">
+<img src="shoes1.jpg">
+<img src="shoes2.webp">
+<img src="shoes3.webp">
+<img src="shoes4.webp">
+<img src="shoes5.webp">
+<img src="shoes6.jpg">
+</div>
+<a href="#collections" class="back-home-btn back-collection-btn">⬅️ Back to Collections</a>
+</section>
+<section id="dresses-gallery" class="gallery-section">
+<h2>Dresses Gallery</h2>
+<div class="gallery-grid">
+<img src="yellow-dress1.jpg">
+<img src="yellow-dress2.jpg">
+<img src="yellow-dress3.jpg">
+<img src="yellow-dress4.jpg">
+<img src="yellow-dress5.jpg">
+<img src="yellow-dress6.jpg">
+</div>
+<a href="#collections" class="back-home-btn back-collection-btn">⬅️ Back to Collections</a>
+</section>
+<section id="bags-gallery" class="gallery-section">
+<h2>Bags Gallery</h2>
+<div class="gallery-grid">
+<img src="bag1.jpg">
+<img src="bag2.jpg">
+<img src="bag3.webp">
+<img src="bag4.webp">
+<img src="bag5.webp">
+<img src="bag6.jpg">
+</div>
+<a href="#collections" class="back-home-btn back-collection-btn">⬅️ Back to Collections</a>
+</section>
+<section class="fashion-contact" id="contact">
+<h2> Contact Us</h2>
+<span class="contact-tag">LET'S CONNECT✨</span>
+<p> Luxury fashion made for your unique style. Contact us for orders & collabrations.</p>
+<a href="https://www.instagram.com/mavi_fashion2022?igsh=MTVrajFzbXoyN2Zpdg==" target="_blank" class="fashion-btn 
+instagram-btn">
+📸 Shop Instagram</a>
+<a href="https://wa.me/+963986138311" target="_blank" class=" fashion-btn
+ whatsapp-btn"> 💬 Order on Whatsapp</a>
+</section>
+<footer class="fashion-footer">
+<p>© 2026 Mavi Fashion. All Rights Reserved.</p>
+</footer>
+<script>
+function toggleFashionMenu(){
+document.querySelector(".fashion-navbar").classList.toggle("active");
+}
+const home =
+document.querySelector("#home");
+const trending=
+document.querySelector("#trending-styles");
+const summer =
+document.querySelector("#summer-vibes");
+const quote =
+document.querySelector(".fashion-quote");
+
+const collectionsSection = 
+document.querySelector("#collections");
+const shoesGallery =
+document.querySelector("#shoes-gallery");
+const dressesGallery =
+document.querySelector("#dresses-gallery");
+const bagsGallery =
+document.querySelector("#bags-gallery");
+const contactSection =
+document.querySelector("#contact");
+const footer =
+document.querySelector(".fashion-footer");
+function hideMobilePages(){
+if(window.innerWidth<= 768){
+home.style.display="none";
+trending.style.display="none";
+summer.style.display="none";
+quote.style.display="none";
+collectionsSection.style.display="none";
+shoesGallery.style.display="none";
+dressesGallery.style.display="none";
+bagsGallery.style.display="none";
+contactSection.style.display="none";
+footer.style.display="none";
+}
+}
+document.querySelector('a[href="#home"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+home.style.display="flex";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#trending-styles"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+trending.style.display="block";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#summer-vibes"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+summer.style.display="block";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#collections"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+collectionsSection.style.display="block";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#contact"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+contactSection.style.display="block";
+footer.style.display="block";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#shoes-gallery"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+shoesGallery.style.display="block";
+window.scrollTo(0,0);
+}
+document.querySelector(".fashion-navbar").classList.remove("active");
+});
+document.querySelector('a[href="#dresses-gallery"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+dressesGallery.style.display="block";
+window.scrollTo(0,0);
+}
+});
+document.querySelector('a[href="#bags-gallery"]').addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+bagsGallery.style.display="block";
+window.scrollTo(0,0);
+}
+});
+if(window.innerWidth<=768){
+hideMobilePages();
+home.style.display="flex";
+}
+document.querySelector("#backHomeBtn").addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+home.style.display="flex";
+window.scrollTo(0,0);
+}
+});
+document.querySelector(".summer-btn").addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+collectionsSection.style.display="block";
+window.scrollTo(0,0);
+}
+});
+document.querySelectorAll(".back-collection-btn").forEach(function(btn){
+btn.addEventListener("click",function(e){
+if(window.innerWidth <= 768){
+e.preventDefault();
+hideMobilePages();
+collectionsSection.style.display="block";
+window.scrollTo(0,0);
+}
+});
+});
+</script>
+</body>
+</html>

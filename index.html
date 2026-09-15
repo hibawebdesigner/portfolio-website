@@ -1,0 +1,78 @@
+<!DOCTYPE html >
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> my first website</title>
+<link href="https://fonts.googlelapis.com/css2?family=poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head> 
+<body>
+<div class="navbar">
+<a href="#" class="logo"><span class="logo-h">H</span>iba</a>
+<div class="nav-links">
+<a href="index.html" class="nav-link" data-i18n="home">Home</a>
+<a href="about.html" class="nav-link" data-i18n="about">About Me</a>
+<a href="projects.html" class="nav-link" data-i18n="portfolio">Portfolio</a>
+<a href="contact.html" class="nav-link" data-i18n="contact">Contact</a>
+<a href="cv.pdf" class="nav-link cv-mobile" download>Download CV</a>
+</div>
+<div class="nav-actions">
+<div class="language-switcher">
+<button type="button" class="language-btn" onclick="toggleLanguages()">🌐 EN ▾</button>
+<div class="language-menu" id="languageMenu">
+<button onclick="changeLanguage('en')">
+<img src="flags/ENGLISH.svg" alt="">English</button>
+<button onclick="changeLanguage('de')">
+<img src="flags/germany.svg" alt="">Deutsch</button>
+<button onclick="changeLanguage('fr')"> 
+<img src="flags/france.svg" alt="">Français</button>
+<button onclick="changeLanguage('it')">
+<img src="flags/italy.svg" alt="">Italiano</button>
+<button onclick="changeLanguage('ar')">
+<img src="flags/syria.svg" alt="">Arabic</button>
+</div>
+</div>
+<button onclick="toggleTheme()" class="theme-btn" id="themeToggle">☀️</button>
+<button class="menu-btn" onclick="toggleMenu()"></button>
+</div>
+</div>
+<div class="card hero">
+<div class="hero-text">
+<span class="hero-tag" data-i18n="hero-tag">FRONT-END WEB DESIGNER</span>
+<h1><span data-i18n="frontend-title">Frontend Developer</span><span class="gradient-text" data-i18n="ui-title"> UI Designer </span></h1>
+<p class="hero-description" data-i18n="hero-description">I create modern, responsive websites with clean code, intuitive user interfaces, and seamless user experiences. </p>
+<div class="hero-buttons">
+<a href="projects.html" class="btn" data-i18n="explore-projects">Explore My Projects &rarr;</a> 
+<a href="contact.html" class="secondary-link" data-i18n="contact-me">Contact Me &rarr;</a>
+</div>
+<div class="hero-stats">
+<div class="stat-box">
+<i class="fa-solid fa-wand-magic-sparkles"></i>
+<strong data-i18n="creative-ui">Creative UI</strong>
+<span data-i18n="creative-ui-text">Modern • Clean • Elegant</span>
+</div>
+<div class="stat-box">
+<i class="fa-solid fa-circle-check"></i>
+<strong data-i18n="responsive-title">Responsive</strong>
+<span data-i18n="responsive-design">Desktop  • Tablet  • Mobile</span>
+</div>
+<div class="stat-box">
+<i class="fa-solid fa-code"></i>
+<strong data-i18n="frontend">Frontend</strong>
+<span>HTML • CSS  • JavaScript</span>
+</div>
+</div>
+</div>
+<div class="hero-image">
+<img src="h.png" class="hero-img">
+</div>
+</div>
+<footer>
+<p data-i18n="footer-text">© 2026 Hiba • Frontend Developer </p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
