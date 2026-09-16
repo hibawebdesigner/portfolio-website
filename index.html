@@ -1,77 +1,147 @@
-<!DOCTYPE html >
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Hiba Sweileh | Front-End Developer & Web Designer</title>
-<link href="https://fonts.googleapis.com/css2?family=poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Elite Fitness Club</title>
 <link rel="stylesheet" href="style.css">
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head> 
+</head>
 <body>
-<div class="navbar">
-<a href="#" class="logo"><span class="logo-h">H</span>iba</a>
-<div class="nav-links">
-<a href="index.html" class="nav-link" data-i18n="home">Home</a>
-<a href="about.html" class="nav-link" data-i18n="about">About Me</a>
-<a href="projects.html" class="nav-link" data-i18n="portfolio">Portfolio</a>
-<a href="contact.html" class="nav-link" data-i18n="contact">Contact</a>
-<a href="cv.pdf" class="nav-link cv-mobile" data-i18n="download-cv" download>Download CV</a>
+<header class="navbar">
+<div class="logo">ELITE <span>FITNESS</span></div>
+<button class="menu-toggle">&#9776;</button>
+<nav>
+<a href="#home">Home</a>
+<a href="#zones">Zones</a>
+<a href="#nutrition">Nutrition Hub</a>
+<a href="#body-analysis">Body Analysis</a>
+<a href="#trainers">Trainers</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<section class="hero" id="home">
+<div class="hero-text fade-up">
+<span>Luxury Fitness & Wellness Club</span>
+<h1>Train Strong.<br>Live Elite.</h1>
+<p>Everything you need for training, nutrition and recovery in one place.</p>
+<div class="hero-features">
+<p>&#10004; Sea View Training</p>
+<p>&#10004; Smart Body Analysis</p>
+<p>&#10004; Healthy Meals</p>
+<p>&#10004; Elite Supplements</p>
 </div>
-<div class="nav-actions">
-<div class="language-switcher">
-<button type="button" class="language-btn" onclick="toggleLanguages()">🌐 EN ▾</button>
-<div class="language-menu" id="languageMenu">
-<button onclick="changeLanguage('en')">
-<img src="flags/ENGLISH.svg" alt="">English</button>
-<button onclick="changeLanguage('de')">
-<img src="flags/Germany.svg" alt="">Deutsch</button>
-<button onclick="changeLanguage('fr')"> 
-<img src="flags/France.svg" alt="">Français</button>
-<button onclick="changeLanguage('it')">
-<img src="flags/Italy.svg" alt="">Italiano</button>
-<button onclick="changeLanguage('ar')">
-<img src="flags/Syria.svg" alt="">Arabic</button>
+<a href="#contact" class="btn desktop-btn">Join Now</a>
 </div>
+<div class="hero-image fade-up">
+<img src="hero-gym.webp" alt="Elite Fitness Club">
 </div>
-<button onclick="toggleTheme()" class="theme-btn" id="themeToggle">☀️</button>
-<button class="menu-btn" onclick="toggleMenu()"></button>
+<a href="#contact" class="btn mobile-btn">Join Now</a>
+</section>
+<section class="zones" id="zones">
+<span class="section-tag">ZONES</span>
+<h2>Equipment & Sports</h2>
+<div class="cards-grid">
+<div class="card fade-up">
+<img src="equipment.webp" alt="">
+<h3>Modern Machines</h3>
+<p>Premium strength machines for complete body training.</p>
 </div>
+<div class="card fade-up">
+<img src="cardio.webp" alt="">
+<h3>Cardio Zone</h3>
+<p>Treadmills, bikes and endurance equipment for all levels.</p>
 </div>
-<div class="card hero">
-<div class="hero-text">
-<span class="hero-tag" data-i18n="hero-tag">FRONT-END WEB DESIGNER</span>
-<h1><span data-i18n="frontend-title">Frontend Developer</span><span class="gradient-text" data-i18n="ui-title"> UI Designer </span></h1>
-<p class="hero-description" data-i18n="hero-description">I create modern, responsive websites with clean code, intuitive user interfaces, and seamless user experiences. </p>
-<div class="hero-buttons">
-<a href="projects.html" class="btn" data-i18n="explore-projects">Explore My Projects &rarr;</a> 
-<a href="contact.html" class="secondary-link" data-i18n="contact-me">Contact Me &rarr;</a>
+<div class="card fade-up">
+<img src="boxing.webp" alt="">
+<h3>Mixed Training</h3>
+<p>Boxing, functional training, stretching and performance workouts.</p>
 </div>
-<div class="hero-stats">
-<div class="stat-box">
-<i class="fa-solid fa-wand-magic-sparkles"></i>
-<strong data-i18n="creative-ui">Creative UI</strong>
-<span data-i18n="creative-ui-text">Modern • Clean • Elegant</span>
-</div>
-<div class="stat-box">
-<i class="fa-solid fa-circle-check"></i>
-<strong data-i18n="responsive-title">Responsive</strong>
-<span data-i18n="responsive-design">Desktop  • Tablet  • Mobile</span>
-</div>
-<div class="stat-box">
-<i class="fa-solid fa-code"></i>
-<strong data-i18n="frontend">Frontend</strong>
-<span>HTML • CSS  • JavaScript</span>
-</div>
-</div>
-</div>
-<div class="hero-image">
-<img src="h.webp" class="hero-img">
+<div class="card fade-up">
+<img src="women-zone.webp" alt="">
+<h3>Women's Zone</h3>
+<p>Dedicated space for women focused on strength, fitness and wellness.</p>
 </div>
 </div>
+</section>
+<section class="nutrition-hub" id="nutrition">
+<span class="section-tag">Nutrition Hub</span>
+<h2>Fuel Your Performance</h2>
+<div class="nutrition-row">
+<div class="nutrition-card fade-up"> 
+<img src="supplement.webp" alt="Elite Supplements">
+<h3>Supplements</h3>
+<p>🥤Whey Protein</p>
+<p>💪Creatine</p>
+<p>💊Vitamins</p>
+</div>
+<div class="nutrition-card fade-up">
+<img src="meal.webp" alt="Elite Meals">
+<h3>Healthy Meals</h3>
+<p>🔥Muscle Gain Meal</p>
+<p>🥗Lean Fitness Bowl</p>
+<p>⚡High-Protein Snack</p>
+</div>
+</div>
+</section>
+<section class="body-analysis" id="body-analysis">
+<div class="analysis-text fade-up">
+<span class="section-tag">BODY ANALYSIS</span>
+<h2>Know Your Body.<br>Transform Your Results.</h2>
+<p>Discover your body composition with advanced technology. 
+Track muscle growth, body fat percentage and overall fitness progress with detailed reports designed to help you reach your goals faster.
+</p>
+<div class="analysis-features">
+<div>📊Accurate Body Composition</div>
+<div>💪Muscle Mass Analysis</div>
+<div>📉Progress Tracking Reports</div>
+<div>🎯Personalized Fitness Insights</div>
+</div>
+</div>
+<div class="analysis-image fade-up">
+<img src="body-analysis.webp" alt="">
+</div>
+</section>
+<section class="trainers" id="trainers">
+<h2>Meet Our Elite Coaches</h2>
+<div class="cards-grid">
+<div class="trainer-card fade-up">
+<img src="trainer1.webp" alt="">
+<h3>Strength & Muscle Building Coach</h3>
+</div>
+<div class="trainer-card fade-up">
+<img src="trainer2.webp" alt="">
+<h3>Nutrition & Wellness Expert</h3>
+</div>
+<div class="trainer-card fade-up">
+<img src="trainer3.webp" alt="">
+<h3>Personal Fitness Coach</h3>
+</div>
+</div> 
+</section>
+<section class="contact" id="contact">
+<span class="section-tag">CONTACT</span>
+<h2>Join Elite Fitness Club</h2>
+<p>Start your fitness journey with premium coaching, smart training and easy contact options.</p>
+<div class="contact-cards">
+<div class="contact-card">
+<span>📱</span>
+<h3>WhatsApp</h3>
+<p>Chat with our team</p>
+</div>
+<div class="contact-card">
+<span>📸</span>
+<h3>Instagram</h3>
+<p>Discover our community </p>
+</div>
+<div class="contact-card">
+<span>📍</span>
+<h3>Location</h3>
+<p>Visit our fitness club</p>
+</div>
+</div>
+</section>
 <footer>
-<p data-i18n="footer-text">© 2026 Hiba • Frontend Developer </p>
+<p>&copy; 2026 Elite Fitness Club. Train Strong. Live Elite.</p>
 </footer>
 <script src="script.js"></script>
 </body>
