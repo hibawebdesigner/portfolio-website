@@ -1,16 +1,28 @@
+function updateThemeButton() {
+    const btn = document.getElementById("themeToggle");
+
+    if (btn) {
+        btn.textContent =
+            document.body.classList.contains("dark") ? "🌙" : "☀️";
+    }
+}
+
 function toggleTheme() {
-document.body.classList.toggle("dark");
-const btn=
- document.getElementById("themeToggle");
-if (btn){
-  if
-(document.body.classList.contains("dark")){
-btn.textContent="🌙";
-}else{
-    btn.textContent="☀️";
+    document.body.classList.toggle("dark");
+
+    const isDark = document.body.classList.contains("dark");
+    localStorage.setItem("theme", isDark ? "dark" : "light");
+
+    updateThemeButton();
 }
+
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme === "dark") {
+    document.body.classList.add("dark");
 }
-}
+
+updateThemeButton();
 const faders =
 document.querySelectorAll('.fade-up');
 const observer = new

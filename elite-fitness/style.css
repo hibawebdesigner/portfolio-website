@@ -455,11 +455,13 @@ transform: translateY(-5px);
 border-color: #d4af37;
 box-shadow: 0 20px 50px rgba(212, 175, 55, .16);
 }
-footer{
-text-align: center;
-padding: 30px;
-color: #aaa;
-background: #080808;
+footer {
+  padding: 12px 20px;
+  background: #111;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
 }
 .fade-up{
 opacity: 0;
@@ -652,4 +654,255 @@ display: block;
 width: fit-content;
 margin: 20px auto 0;
 }
+}
+@media (orientation: landscape) and (min-width: 769px) and (max-width: 950px) {
+  .navbar {
+    padding: 10px 5%;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: 0;
+    color: #d4af37;
+    font-size: 30px;
+    cursor: pointer;
+  }
+
+  .navbar nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 220px;
+    padding: 15px;
+    background: #181818;
+    border-radius: 18px;
+    transform: none;
+  }
+
+  .navbar nav.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar nav a {
+    width: 100%;
+    text-align: center;
+  }
+ 
+  .hero-text,
+  .hero-image {
+    flex: 1;
+    min-width: 0;
+  } 
+
+.hero {
+  align-items: center;
+  padding: 80px 3% 25px;
+}
+
+.hero-text {
+  margin-top: 0;
+}
+
+.hero-text h1 {
+  font-size: 38px;
+  margin: 12px 0;
+}
+
+.hero-text > p {
+  margin-bottom: 10px;
+}
+
+.hero-features {
+  gap: 8px;
+  margin: 12px 0;
+}
+
+.hero-features p {
+  min-height: 0;
+  padding: 10px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.hero-image img {
+  height: min(82vh, 520px);
+  max-height: none;
+}
+.hero .desktop-btn {
+  margin-top: 28px;
+}
+  .nutrition-row,
+  .cards-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .nutrition-hub {
+    padding: 65px 7% 50px;
+  }
+
+  .nutrition-hub h2 {
+    font-size: 36px;
+    margin: 5px 0 16px;
+  }
+
+  .nutrition-row {
+    max-width: 760px;
+   margin: 0 auto;
+    gap: 14px;
+  }
+
+  .nutrition-card {
+    padding: 8px;
+  }
+
+  .nutrition-card img {
+    height: 140px;
+    margin-bottom: 5px;
+  }
+
+  .nutrition-card h3 {
+    font-size: 17px;
+    margin-bottom: 4px;
+  }
+
+  .nutrition-card p {
+    padding: 5px 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+  }
+
+  .body-analysis {
+    margin-top: 0;
+    padding: 85px 5% 30px;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .analysis-text h2 {
+    font-size: 34px;
+    line-height: 1.1;
+    margin: 10px 0;
+  }
+
+  .analysis-text > p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .analysis-features {
+    gap: 8px;
+  }
+
+  .analysis-features div {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+.analysis-image img {
+  height: 380px;
+  width: auto;
+  max-width: 100%;
+}
+ 
+  .trainers {
+    padding: 50px 3% 50px;
+  }
+
+ .trainers .cards-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 700px;
+  margin: 0 auto;
+  gap: 14px;
+}
+.trainer-card {
+  padding: 10px;
+}
+
+.trainer-card img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center bottom;
+}
+.contact {
+  min-height: 0;
+  padding: 50px 3% 32px;
+}
+
+.contact h2 {
+  font-size: 42px;
+  margin: 6px 0;
+}
+
+.contact > p {
+  margin: 0 auto 12px;
+}
+
+.contact-cards {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 800px;
+  gap: 14px;
+  margin: 8px auto 0;
+}
+
+.contact-card {
+  min-width: 0;
+  padding: 20px 10px;
+}
+
+.contact-card h3 {
+  font-size: 18px;
+  margin: 10px 0 5px;
+}
+
+.contact-card p {
+  font-size: 14px;
+}
+
+footer {
+  padding: 12px 20px;
+  background: #111;
+  border-top: 1px solid rgba(212, 175, 55, 0.25);
+  color: #aaa;
+  font-size: 13px;
+  text-align: center;
+}
+  .zones {
+    padding: 65px 2% 40px;
+  }
+
+  .zones h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .zones .cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .zones .card {
+    min-width: 0;
+    padding: 10px;
+  }
+
+  .zones .card img {
+    height: 190px;
+    margin-bottom: 10px;
+  }
+
+  .zones .card h3 {
+    font-size: 17px;
+  }
+
+  .zones .card p {
+    font-size: 13px;
+    line-height: 1.4;
+  }
 }
