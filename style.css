@@ -8,7 +8,6 @@
 body{
 background: var(--bg);
 color:var(--text);
-transition: 0.3s ease;
 font-family: 'poppins', sans-serif;
 }
 .navbar{
@@ -3228,8 +3227,14 @@ box-sizing: border-box;
     padding-top: 105px;
 }
 .fashion-contact-buttons{
-    transform: translateY(-40px);
+    transform: translateY(-15px);
 }
+.fashion-contact .fashion-btn{
+    margin: 14px 10px;
+}
+.fashion-contact .instagram-btn {
+        margin-bottom: 25px !important;
+    }
 .fashion-footer{
     margin-top: 0;
     padding: 10px 20px;
